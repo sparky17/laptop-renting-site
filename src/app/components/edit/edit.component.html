@@ -1,0 +1,66 @@
+<div id="edit">
+    <div class="container">
+      <h1>ADD</h1>
+      <form [formGroup]="editData" (ngSubmit)="onFormSubmit()">
+        <div class="mb-3">
+          <label for="Manufacturer" class="form-label">Manufacturer</label>
+          <input type="text" class="form-control" id="Manufacturer" formControlName="Manufacturer" required>
+        </div>
+        <div class="mb-3">
+          <label for="ModelName" class="form-label">Model Name</label>
+          <input type="text" class="form-control" id="ModelName" formControlName="ModelName" required>
+        </div>
+        <div class="mb-3">
+          <label for="Category" class="form-label">Category</label>
+          <input type="text" class="form-control" id="Category" formControlName="Category" required>
+        </div>
+        <div class="mb-3">
+          <label for="ScreenSize" class="form-label">Screen Size</label>
+          <input type="text" class="form-control" id="ScreenSize" formControlName="ScreenSize" required>
+        </div>
+        <div class="mb-3">
+          <label for="Screen" class="form-label">Screen</label>
+          <input type="text" class="form-control" id="Screen" formControlName="Screen" required>
+        </div>
+        <div class="mb-3">
+          <label for="CPU" class="form-label">CPU</label>
+          <input type="text" class="form-control" id="CPU" formControlName="CPU" required>
+        </div>
+        <div class="mb-3">
+          <label for="RAM" class="form-label">RAM</label>
+          <input type="text" class="form-control" id="RAM" formControlName="RAM" required>
+        </div>
+        <div class="mb-3">
+          <label for="Storage" class="form-label">Storage</label>
+          <input type="text" class="form-control" id="Storage" formControlName="Storage" required>
+        </div>
+        <div class="mb-3">
+          <label for="GPU" class="form-label">GPU</label>
+          <input type="text" class="form-control" id="GPU" formControlName="GPU" required>
+        </div>
+        <div class="mb-3">
+          <label for="OperatingSystem" class="form-label">Operating System</label>
+          <input type="text" class="form-control" id="OperatingSystem" formControlName="OperatingSystem" required>
+        </div>
+        <div class="mb-3">
+          <label for="OperatingSystemVersion" class="form-label">OS Version</label>
+          <input type="text" class="form-control" id="OperatingSystemVersion" formControlName="OperatingSystemVersion" required>
+        </div>
+        <div class="mb-3">
+          <label for="Weight" class="form-label">Weight</label>
+          <input type="text" class="form-control" id="Weight" formControlName="Weight" required>
+        </div>
+        <div class="mb-3">
+          <label for="PriceEuros" class="form-label">Price (Euros)</label>
+          <input type="number" class="form-control" id="PriceEuros" formControlName="PriceEuros" required>
+        </div>
+        <div class="mb-3">
+          <label for="image" class="form-label">Image</label>
+          <input type="text" class="form-control" id="image" formControlName="image" required>
+        </div>
+        <button type="submit" class="btn btn-primary">{{editData?'update':'save`'}}</button>
+      </form>
+    </div>
+
+</div>
+  

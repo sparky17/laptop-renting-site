@@ -1,0 +1,76 @@
+<div class="container">
+    <h1 class="mt-4">Add Laptop</h1>
+    <form (ngSubmit)="add()" class="mt-4">
+        <div class="form-group">
+            <label for="Manufacturer">Manufacturer</label>
+            <input type="text" class="form-control" id="Manufacturer" name="Manufacturer" required [(ngModel)]="Manufacturer">
+        </div>
+
+        <div class="form-group">
+            <label for="ModelName">Model Name</label>
+            <input type="text" class="form-control" id="ModelName" name="ModelName" required [(ngModel)]="ModelName">
+        </div>
+
+        <div class="form-group">
+            <label for="Category">Category</label>
+            <input type="text" class="form-control" id="Category" name="Category" required [(ngModel)]="Category">
+        </div>
+
+        <div class="form-group">
+            <label for="ScreenSize">Screen Size</label>
+            <input type="text" class="form-control" id="ScreenSize" name="ScreenSize" required [(ngModel)]="ScreenSize">
+        </div>
+
+        <div class="form-group">
+            <label for="Screen">Screen</label>
+            <input type="text" class="form-control" id="Screen" name="Screen" required [(ngModel)]="Screen">
+        </div>
+
+        <div class="form-group">
+            <label for="CPU">CPU</label>
+            <input type="text" class="form-control" id="CPU" name="CPU" required [(ngModel)]="CPU">
+        </div>
+
+        <div class="form-group">
+            <label for="RAM">RAM</label>
+            <input type="text" class="form-control" id="RAM" name="RAM" required [(ngModel)]="RAM">
+        </div>
+
+        <div class="form-group">
+            <label for="Storage">Storage</label>
+            <input type="text" class="form-control" id="Storage" name="Storage" required [(ngModel)]="Storage">
+        </div>
+
+        <div class="form-group">
+            <label for="GPU">GPU</label>
+            <input type="text" class="form-control" id="GPU" name="GPU" required [(ngModel)]="GPU">
+        </div>
+
+        <div class="form-group">
+            <label for="os">Operating System</label>
+            <input type="text" class="form-control" id="os" name="OperatingSystem" required [(ngModel)]="OperatingSystem">
+        </div>
+
+        <div class="form-group">
+            <label for="osVersion">OS Version</label>
+            <input type="text" class="form-control" id="OperatingSystemVersion" name="OperatingSystemVersion" required [(ngModel)]="OperatingSystemVersion">
+        </div>
+
+        <div class="form-group">
+            <label for="Weight">Weight</label>
+            <input type="text" class="form-control" id="Weight" name="Weight" required [(ngModel)]="Weight">
+        </div>
+
+        <div class="form-group">
+            <label for="PriceEuros">Price (Euros)</label>
+            <input type="number" class="form-control" id="PriceEuros" name="PriceEuros" required [(ngModel)]="PriceEuros">
+        </div>
+
+        <div class="form-group">
+            <label for="image">Image URL</label>
+            <input type="text" class="form-control" id="image" name="image" required [(ngModel)]="image">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Add Laptop</button>
+    </form>
+</div>

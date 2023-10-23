@@ -1,0 +1,57 @@
+<div class="cart-top container-fluid">
+    <div class="container custom-container">
+        <div class="item">
+            <a  (click)="filter('')">
+                <img class="item-image" src="https://th.bing.com/th/id/OIP.EU4mJAhhVTjk-zMYuv_tJAHaEe?w=304&h=184&c=7&r=0&o=5&pid=1.7" alt="Gaming">
+                <h6>All Laptops</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a  (click)="filter('Apple')">
+
+                <img class="item-image" src="../../../assets/img1.jpeg" alt="Gaming">
+                <h6>Apple</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a  (click)="filter('Dell')">
+                <img class="item-image" src="../../../assets/img2.jpeg" alt="HP">
+                <h6>Dell</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a  (click)="filter('HP')">
+                <img class="item-image" src="../../../assets/img3.jpeg" alt="Apple">
+                <h6>HP</h6>
+            </a>
+        </div>
+    </div>
+    
+</div>
+
+
+
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let item of filterCategory | filter:searchKey:'ModelName' ">
+
+            <div class="card col-md-4.5">
+                <img class="card-img-top" src="{{ item.image }}" alt="Product Image">
+                <div class="card-body">
+                    <h5 class="card-title">{{ item.ModelName }}</h5>
+                    <p class="card-text">{{ item.CPU }}</p>
+                    <p class="card-text">{{ item.RAM }}</p>
+                    <p class="card-text"><strong>Price:</strong> ₹{{ item.PriceEuros }}/year</p>
+                    <button class="btn btn-success" (click)="addToCart(item)">Add to Cart</button>
+                    <a class="btn btn-primary" [routerLink]="'/edit/' + item.id">Edit</a>
+                    <button class="btn btn-danger" (click)="delete(item.id)">Delete</button>
+                </div>
+            </div>
+            
+            
+        </ng-container>
+   
+    </div>
+</div>
+
+<!-- <app-add></app-add> -->
